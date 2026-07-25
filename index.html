@@ -51,9 +51,8 @@
       </p>
 
       <div class="glass contact-box" data-aos="fade-up" data-aos-delay="300">
-        <a href="tel:+917681971308">+91 76819 71308</a> &middot;
-        <a href="mailto:agamjotsinghbabra@gmail.com">agamjotsinghbabra@gmail.com</a> &middot;
-        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" id="emailLink">Email</a> &middot;
+        <a href="https://www.linkedin.com/in/agamjot-s-384939389" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </section>
 
@@ -71,7 +70,7 @@
         </div>
         <ul>
           <li>Grade 10 - 88.9%</li>
-          <li>IELTS - 7.5 Bands (Listening 7.5, Reading 8.5, Writing 6.5, Speaking 7.0)</li>
+          <li>IELTS - 7.5 Bands</li>
         </ul>
       </div>
     </section>
@@ -345,5 +344,17 @@
   <!-- ## scripts at the bottom so the page loads faster -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
+  <script>
+    (function () {
+      const user = "agamjotsinghbabra";
+      const domain = "gmail.com";
+      const email = user + "@" + domain;
+      const emailLink = document.getElementById("emailLink");
+      if (emailLink) {
+        emailLink.href = "mailto:" + email;
+        emailLink.textContent = email;
+      }
+    })();
+  </script>
 </body>
 </html>
