@@ -1,14 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Test Page</title>
-  </head>
-  <body>
-    <main>
-      <h1>Test Index</h1>
-      <p>This is a test index.html file.</p>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agamjot Singh Babra - Resume</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ## aos library for the scroll animations, way easier than writing that myself -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ## bg blobs, just decoration -->
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <span class="logo">Agamjot Singh Babra</span>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+
+      <button id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ## intro part -->
+    <section class="hero">
+      <p class="tag" data-aos="fade-up">High School Student, Amritsar, Punjab, India</p>
+      <h1 data-aos="fade-up" data-aos-delay="100">Agamjot Singh<br>Babra</h1>
+      <p class="hero-text" data-aos="fade-up" data-aos-delay="200">
+        Independent researcher in theoretical physics, ICT Club President, and a photographer
+        who has spent the last few years building things, running events, and writing about black holes.
+      </p>
+
+      <div class="glass contact-box" data-aos="fade-up" data-aos-delay="300">
+        <a href="tel:+917681971308">+91 76819 71308</a> &middot;
+        <a href="mailto:agamjotsinghbabra@gmail.com">agamjotsinghbabra@gmail.com</a> &middot;
+        <a href="#" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- ## school info -->
+    <section id="education">
+      <h2 data-aos="fade-right">Education</h2>
+
+      <div class="glass card" data-aos="fade-up">
+        <div class="card-top">
+          <div>
+            <h3>Spring Dale Senior School</h3>
+            <p class="place">Amritsar, Punjab, India</p>
+          </div>
+          <span class="years">2010 - 2027</span>
+        </div>
+        <ul>
+          <li>Grade 10 - 88.9%</li>
+          <li>IELTS - 7.5 Bands (Listening 7.5, Reading 8.5, Writing 6.5, Speaking 7.0)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ## the physics paper, took forever to write -->
+    <section id="research">
+      <h2 data-aos="fade-right">Research</h2>
+
+      <div class="glass card" data-aos="fade-up">
+        <div class="card-top">
+          <div>
+            <h3>The Black Hole Information Paradox: Origins, Battles, and Where We Stand Now</h3>
+            <p class="place">Independent research paper</p>
+          </div>
+          <span class="years">2026</span>
+        </div>
+        <ul>
+          <li>Authored an independent research paper examining the black hole information paradox, tracing the
+            scientific debate from Bekenstein's entropy discovery and Hawking's radiation calculation through the
+            "black hole war," the firewall paradox, and the island formula, to a 2025 reassessment of Hawking's
+            original derivation.</li>
+          <li>Synthesized primary sources including foundational texts by Hawking and Susskind, arXiv preprints,
+            CERN colloquium presentations, MIT physics research, and Event Horizon Telescope data.</li>
+        </ul>
+        <a class="link-more" href="https://zenodo.org/records/21041869" target="_blank">Read it on Zenodo -></a>
+      </div>
+    </section>
+
+    <!-- ## internships -->
+    <section id="experience">
+      <h2 data-aos="fade-right">Professional Experience</h2>
+
+      <div class="glass card" data-aos="fade-up">
+        <div class="card-top">
+          <div>
+            <h3>Summer Intern - Novelty Hyundai Motors</h3>
+            <p class="place">Amritsar</p>
+          </div>
+          <span class="years">June 2026</span>
+        </div>
+        <ul>
+          <li>Completed a two-week, hands-on internship under the direct supervision of the General Manager,
+            working across the dealership's technical and administrative operations from day one.</li>
+          <li>Diagnosed and resolved recurring technical issues on staff systems and computers, restoring
+            day-to-day operations with minimal downtime.</li>
+          <li>Assisted senior engineers with network configuration and system maintenance, and supported ERP-side
+            operations including data entry, record updates, and workflow tracking.</li>
+          <li>Compiled and maintained operational reports and records with a strong emphasis on accuracy, keeping
+            documentation audit-ready and error-free.</li>
+          <li>Mentored and supported fellow interns on technical tasks, contributing to a collaborative team
+            environment.</li>
+        </ul>
+      </div>
+
+      <div class="glass card" data-aos="fade-up">
+        <div class="card-top">
+          <div><h3>Healthcare IT Intern - Fortis Escorts Hospital</h3></div>
+          <span class="years">March 2026</span>
+        </div>
+        <ul>
+          <li>Worked hands-on with the Oracle Health Information System (HIS) and the hospital's in-house software
+            platforms to support Electronic Medical Records (EMR) management across departments.</li>
+          <li>Managed patient registration, appointment scheduling, billing, laboratory requests, and
+            pharmacy-related processes within the HIS, ensuring accurate entry of sensitive patient data.</li>
+          <li>Tested in-house hospital software modules for functionality and reliability, identifying bugs and
+            inconsistencies through hands-on use of the system.</li>
+          <li>Documented and reported identified bugs to the IT department, helping the team track, prioritize,
+            and resolve issues that could otherwise disrupt patient flow or hospital operations.</li>
+          <li>Gained direct exposure to how the HIS and EMR systems support secure recordkeeping and efficient
+            coordination across registration, billing, laboratory, and pharmacy departments.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ## clubs and stuff, this is the biggest section ngl -->
+    <section id="leadership">
+      <h2 data-aos="fade-right">Leadership &amp; Extracurricular Activities</h2>
+
+      <div class="glass card" data-aos="fade-up">
+        <div class="card-top">
+          <div><h3>ICT Club President</h3></div>
+          <span class="years">May 2026 - Present</span>
+        </div>
+        <ul>
+          <li>Organized TECHXEXPLORE, a technology event that engaged 200+ student participants.</li>
+          <li>Coordinated IT UTSAV, an inter-school tech fest attended by students from 12+ schools.</li>
+          <li>Collaborated with school administration, teachers, and student teams to execute large-scale events,
+            managing logistics, team coordination, and participant engagement.</li>
+        </ul>
+      </div>
+
+      <div class="glass card" data-aos="fade-up">
+        <div class="card-top">
+          <div><h3>Student Media, Photography &amp; Digital Outreach</h3></div>
+          <span class="years">June 2025 - Present</span>
+        </div>
+        <ul>
+          <li>Collaborated with school management to produce promotional videos and social media campaigns,
+            scripting 10+ videos published on the school's official Instagram.</li>
+          <li>Contributed to the growth of the school's Instagram audience from 0 to 20,000 followers using
+            storytelling techniques to showcase events, achievements, and student life.</li>
+        </ul>
+      </div>
+
+      <div class="glass card" data-aos="fade-up">
+        <div class="card-top">
+          <div><h3>Jacaranda House Captain</h3></div>
+          <span class="years">May 2025 - May 2026</span>
+        </div>
+        <ul>
+          <li>Led and represented a community of 350+ students, coordinating participation in inter-house
+            academic, cultural, athletic, and co-curricular competitions.</li>
+          <li>Served as primary liaison between students, teachers, and school administration, contributing to
+            the house's achievement of 50+ medals and recognitions.</li>
+        </ul>
+      </div>
+
+      <div class="glass card" data-aos="fade-up">
+        <div class="card-top">
+          <div><h3>Senior Member - Space and Robotics Club</h3></div>
+          <span class="years">January 2022 - Present</span>
+        </div>
+        <ul>
+          <li>Conducted sessions introducing students to astronomy, cosmology, and space science, with workshops
+            attended by more than 40 students.</li>
+          <li>Collaborated with STEM clubs to execute large-scale events.</li>
+        </ul>
+      </div>
+
+      <div class="glass card" data-aos="fade-up">
+        <div class="card-top">
+          <div><h3>Prefect</h3></div>
+          <span class="years">April 2024 - April 2025</span>
+        </div>
+        <ul>
+          <li>Organized and managed multiple club events, ensuring smooth coordination among students, teachers,
+            and event organizers.</li>
+          <li>Conducted interviews of prospective student leaders and authored event reports, summaries, and
+            documentation for school publications and records.</li>
+          <li>Managed student coordination and communication during inter-school and intercity events involving
+            multiple institutions.</li>
+        </ul>
+      </div>
+
+      <div class="glass card" data-aos="fade-up">
+        <div class="card-top">
+          <div><h3>Special Projects &amp; Educational Initiatives</h3></div>
+          <span class="years">February 2023 - March 2026</span>
+        </div>
+        <ul>
+          <li>Served as lead photographer and videographer for the school's annual Shakespeare-themed theatrical
+            production (300+ participants, 1,000+ audience), producing behind-the-scenes and promotional
+            content.</li>
+          <li>Researched and co-presented a seminar on Higher Education Opportunities in Punjab and Canada for
+            Grade 9 and 10 students.</li>
+          <li>Represented the school as student ambassador at community-service initiatives, leadership events,
+            and outreach programs, and participated in Interact Club civic engagement activities.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ## awards section, kept these short -->
+    <section id="awards">
+      <h2 data-aos="fade-right">Awards &amp; Honors</h2>
+      <div class="award-grid">
+        <div class="glass award" data-aos="zoom-in">
+          <h3>Best Photographer of the Year</h3>
+          <p>Two consecutive years. The school's highest photography recognition, for visual storytelling, event
+            coverage, and creative excellence.</p>
+        </div>
+        <div class="glass award" data-aos="zoom-in">
+          <h3>Indian Academy of Fine Arts - Photography Selection</h3>
+          <p>Three consecutive years. Work selected for exhibition and recognition, reflecting consistent artistic
+            achievement.</p>
+        </div>
+        <div class="glass award" data-aos="zoom-in">
+          <h3>National Cyber Olympiad - City Rank 2</h3>
+          <p>Two consecutive years. Reflecting strong aptitude in computer science, logical reasoning, and
+            cybersecurity concepts.</p>
+        </div>
+        <div class="glass award" data-aos="zoom-in">
+          <h3>DAV College TechFest Award</h3>
+          <p>Recognized for outstanding performance in a technology-based competition conducted by DAV College.</p>
+        </div>
+        <div class="glass award" data-aos="zoom-in">
+          <h3>Cambridge School TechFest Award</h3>
+          <p>Received an award at an inter-school technology competition hosted by Cambridge School.</p>
+        </div>
+        <div class="glass award" data-aos="zoom-in">
+          <h3>Ganit Utsav Award</h3>
+          <p>Earned at Ganit Utsav, DPS School, for excellence in mathematics and problem-solving.</p>
+        </div>
+        <div class="glass award" data-aos="zoom-in">
+          <h3>Multiple Inter-School Competitions</h3>
+          <p>First place in numerous school and inter-school competitions across technology, academics, and
+            creative disciplines.</p>
+        </div>
+        <div class="glass award" data-aos="zoom-in">
+          <h3>District-Level Basketball &amp; Chess</h3>
+          <p>Selected to represent the district in competitive basketball and chess events.</p>
+        </div>
+        <div class="glass award" data-aos="zoom-in">
+          <h3>Competitive Swimmer</h3>
+          <p>Participated in competitive swimming events and training programs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ## community service stuff -->
+    <section id="community">
+      <h2 data-aos="fade-right">Community Service</h2>
+      <div class="glass card" data-aos="fade-up">
+        <ul>
+          <li>Selected as the school representative for DAAN UTSAV, a community-service initiative supported by
+            the Government of Punjab aimed at promoting a culture of giving and social responsibility.</li>
+          <li>Participated in the collection, organization, and distribution of essential items, including
+            clothing, books, and daily-use supplies, to underprivileged individuals and families in the local
+            community.</li>
+          <li>Volunteered as a scribe for children with special needs, assisting them during examinations by
+            accurately writing responses on their behalf in accordance with examination guidelines.</li>
+          <li>Supported students with special needs beyond examinations by helping them understand academic
+            concepts and navigate portions of the curriculum.</li>
+          <li>Visited old-age homes and volunteered time to support senior citizens through companionship and
+            day-to-day assistance.</li>
+          <li>Assisted elderly residents with reading, writing, completing forms, organizing personal belongings,
+            and participating in recreational activities.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ## last section, skills -->
+    <section id="skills">
+      <h2 data-aos="fade-right">Skills &amp; Languages</h2>
+      <div class="glass card" data-aos="fade-up">
+        <p class="skill-label">Technical</p>
+        <div class="pills">
+          <span class="pill">Git</span>
+          <span class="pill">HTML &amp; CSS</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">Python</span>
+          <span class="pill">Oracle Health Information System (HIS)</span>
+          <span class="pill">Photoshop</span>
+        </div>
+
+        <p class="skill-label">Professional</p>
+        <div class="pills">
+          <span class="pill">Project Management</span>
+          <span class="pill">Event Management</span>
+          <span class="pill">Public Speaking</span>
+          <span class="pill">Team Leadership</span>
+          <span class="pill">Social Media Strategy &amp; Audience Growth</span>
+          <span class="pill">Visual Storytelling</span>
+          <span class="pill">Photography</span>
+        </div>
+
+        <p class="skill-label">Languages</p>
+        <div class="pills">
+          <span class="pill">English - Fluent</span>
+          <span class="pill">Punjabi - Native</span>
+          <span class="pill">Hindi - Native</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Agamjot Singh Babra &middot; Amritsar, Punjab &middot; <a href="mailto:agamjotsinghbabra@gmail.com">agamjotsinghbabra@gmail.com</a></p>
+  </footer>
+
+  <!-- ## scripts at the bottom so the page loads faster -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
